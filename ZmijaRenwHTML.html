@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Snake</title>
+        <link rel="stylesheet" href="ZmijaRenewCSS.css">
+        <script src="ZmijaRenewJS.js"></script>
+    </head>
+
+    <body>
+        <div class="background-animation">
+            <!-- Kreirajte više krugova s različitim bojama -->
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <!-- Dodajte više krugova po potrebi -->
+        </div>
+
+        <h1>Zmijica</h1>
+        <h2>Pokreni igru strelicama na tipkovnici</h2>
+
+        <canvas id="board"></canvas>
+        <button onclick="resetGame()">Play again</button>
+
+        <div class="difficulty">
+            <button onclick="setDifficulty('easy')">Easy</button>
+            <button onclick="setDifficulty('medium')">Medium</button>
+            <button onclick="setDifficulty('hard')">Hard</button>
+        </div>
+        
+      
+
+    
+    
+    </body>
+</html>

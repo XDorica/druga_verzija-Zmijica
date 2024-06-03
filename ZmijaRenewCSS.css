@@ -1,0 +1,95 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 5px;
+  }
+
+  h2 {
+    margin: 10px;
+  }
+  
+  canvas {
+    box-shadow: black 20px 10px 50px;
+    margin-bottom: 10px;
+    border: 5px solid gray;
+  }
+  
+  button {
+    box-shadow: black 2px 2px 20px;
+    background-color: beige;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+
+  button:hover {
+    background-color: lightcoral;
+  }
+  
+  button:active {
+    background-color: rgb(255, 0, 0);
+  }
+
+  
+  /* Stilizacija pozadinske animacije */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Omogućava klikanje kroz animaciju */
+    z-index: -1; /* Postavlja animaciju iza ostalih elemenata */
+    overflow: hidden; /* Spriječava prikazivanje izvan granica */
+}
+
+/* Stilizacija krugova */
+.circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    animation: pulse 5s ease-in-out infinite; /* CSS animacija pulsiranja */
+}
+
+/* Dodajte različite boje i veličine za različite krugove */
+.circle1 {
+    background-color: #FF5733; /* Boja 1 */
+    top: 10%;
+    left: 10%;
+}
+
+.circle2 {
+    background-color: #33FF57; /* Boja 2 */
+    top: 10%;
+    left: 50%;
+}
+
+.circle3 {
+    background-color: #ffff33; /* Boja 2 */
+    top: 50%;
+    left: 30%;
+}
+
+/* Definicija animacije rotacije */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Početna i krajnja veličina kruga */
+    }
+    50% {
+        transform: scale(0.8); /* Srednja veličina kruga */
+    }
+}
+
+
+
+  
