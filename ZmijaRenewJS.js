@@ -112,7 +112,7 @@ for (let i = 0; i < snakeBody.length; i++) {
 
 
             //game over uvjeti
-            if (snakeX < 0 || snakeX > cols*blockSize || snakeY < 0 || snakeY > rows*blockSize) {
+            if (snakeX < 0 || snakeX >= cols*blockSize || snakeY < 0 || snakeY >= rows*blockSize) {
                 gameOver = true;
             }
 
